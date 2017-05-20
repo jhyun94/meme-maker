@@ -43,5 +43,13 @@ html,body {
 input {
   width: 100%;
   padding-left: 10px;
+  height: 40px;
+  margin: 30px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+input:focus {
+  outline: none;
 }
 

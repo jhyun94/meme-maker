@@ -1,6 +1,16 @@
 $(document).ready(function(){
   $("#image-url").on("keyup", function(){
-    var $value = $("#image-url").val();
-    $(".meme-img").attr("src", $value);
+    var url = this.value;
+    $(".meme-img").attr("src", url);
+  });
+
+  $("#top").on("keyup", function(){
+    var value= this.value;
+    $(".top-caption").text(value);
+  })
+
+  $("#bottom").on("keyup", function(){
+    var value= this.value;
+    $(".bottom-caption").text(value);
   })
 })

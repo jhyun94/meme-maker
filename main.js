@@ -7,10 +7,17 @@ $(document).ready(function(){
   $("#top").on("keyup", function(){
     var value= this.value;
     $(".top-caption").text(value);
-  })
+  });
 
   $("#bottom").on("keyup", function(){
     var value= this.value;
     $(".bottom-caption").text(value);
+  });
+
+  $.ajax({
+    method: "GET",
+    url: "https://api.imgflip.com/get_memes"
+  }).done(function(response){
+    
   })
 })
